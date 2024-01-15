@@ -13,7 +13,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
         <div class="container">
             <!-- Adderar logga -->
             <a href="#" class="navbar-brand">Frontend brand</a>
@@ -46,11 +46,11 @@
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
-                    <h1>Behöver du en <span class="text-warning">Frontend utvecklare?</span> </h1>
+                    <h1>Become a <span class="text-warning">Web Developer</span> </h1>
                     <p class="lead my-4">
                     <div class="lead"></div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, totam. Lorem
                     ipsum dolor sit amet. </p>
-                    <button class=" btn btn-primary btn-lg"> Start the Enrolling</button>
+                    <button class=" btn btn-primary btn-lg"> Start the journey</button>
 
                 </div>
                 <img class="img-fluid w-50 d-none d-sm-block"
@@ -133,30 +133,84 @@
             </div>
         </div>
     </div>
-</section>
-<!-- learn section -->
-<div id="learn" class="section p-5 bg-dark">
-    <div class="container">
-        <div class="row align-items-center justify-content-between">
-            <div class="col-md">
-                <img src="img/undraw_React_re_g3ui-removebg-preview.png" class="img-fluid">
-            </div>
-            <div class="col-md p-5">
-                <h2>Learn the fundamentals</h2>
-                <p class="lead">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente maxime libero possimus vel
-                    reprehenderit id debitis quae praesentium rerum enim. Quidem omnis voluptatibus expedita
-                    distinctio illum molestiae magnam quia architecto!
-                </p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore est quo molestiae maiores id!
-                    Quasi pariatur molestiae, aspernatur quidem quae rem sequi doloremque iusto veniam in error
-                    illum! Nesciunt, facere.</p>
-                <a href="#" class="btn btn-dark mt-3"> <i class="bi bi-chevron-right"> </i>Read more</a>
-
+    </section>
+    <!-- React section -->
+    <div id="learn" class="section p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Learn React</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente maxime libero possimus vel
+                        reprehenderit id debitis quae praesentium rerum enim. Quidem omnis voluptatibus expedita
+                        distinctio illum molestiae magnam quia architecto!
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore est quo molestiae maiores id!
+                        Quasi pariatur molestiae, aspernatur quidem quae rem sequi doloremque iusto veniam in error
+                        illum! Nesciunt, facere.</p>
+                    <a href="#" class="btn btn-light mt-3"> <i class="bi bi-chevron-right"> </i>Read more</a>
+                </div>
+                <div class="col-md">
+                    <img src="img/undraw_React_re_g3ui-removebg-preview.png" class="img-fluid">
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <!-- question Accordion -->
+    <section id="questions" class="p-5">
+        <div class="container">
+            <h2 class="text-center md-4">FAQ</h2>
+            <!-- From Bootstrap -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                            body.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                            body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just filling up the
+                            space to make it look, at least at first glance, a bit more representative of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
