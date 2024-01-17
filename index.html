@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -50,7 +51,8 @@
                     <p class="lead my-4">
                     <div class="lead"></div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, totam. Lorem
                     ipsum dolor sit amet. </p>
-                    <button class=" btn btn-primary btn-lg"> Start the journey</button>
+                    <button class=" btn btn-warning btn-lg " data-bs-toggle="modal" data-bs-target="#enroll"> Start the
+                        Enrollement</button>
 
                 </div>
                 <img class="img-fluid w-50 d-none d-sm-block"
@@ -157,63 +159,195 @@
         </div>
     </div>
 
-    <!-- question Accordion -->
+    <!-- question Accordion  FAQ -->
     <section id="questions" class="p-5">
         <div class="container">
             <h2 class="text-center md-4">FAQ</h2>
             <!-- From Bootstrap -->
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion accordion-flush" id="questions">
+                <!-- Item 1 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Accordion Item #1
+                            data-bs-target="#question-one">
+                            Question 1
                         </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
-                            body.</div>
+                    <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+                            quis, ipsam veritatis cum accusantium culpa perferendis unde laudantium sed nam. Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Odit, accusantium?</div>
                     </div>
                 </div>
+                <!-- item 2 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Accordion Item #2
+                            data-bs-target="#question-two">
+                            Question 2
                         </button>
                     </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                            body. Let's imagine this being filled with some actual content.</div>
+                    <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+                            quis, ipsam veritatis cum accusantium culpa perferendis unde laudantium sed nam. Lorem ipsum
+                            dolor, sit amet consectetur adipisicing elit. Ipsam exercitationem fugiat aspernatur aliquid
+                            ut dolore sed sequi. Minus quod quasi labore. Esse minima molestiae ut aperiam, quam nam
+                            quibusdam tenetur dolorum possimus odit corporis nihil. Reprehenderit ad quod corporis
+                            porro!</div>
                     </div>
                 </div>
+                <!-- item 3 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Accordion Item #3
+                            data-bs-target="#question-three">
+                            Question 3
                         </button>
                     </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
-                            body. Nothing more exciting happening here in terms of content, but just filling up the
-                            space to make it look, at least at first glance, a bit more representative of how this would
-                            look in a real-world application.</div>
+                    <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+                            quis, ipsam veritatis cum accusantium culpa perferendis unde laudantium sed nam. Lorem
+                            ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, earum. Lorem ipsum dolor sit
+                            amet.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="instructors" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text text-white "> Our instructors </h2>
+            <p class="text-center text-white mb-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                ipsum autem praesentium maiores voluptatem molestias, dolores beatae, labore ratione vitae, ut
+                consectetur optio totam quos dolorum eveniet voluptas ipsam. Suscipit!</p>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle"
+                                alt="employee">
+                            <h3 class="card-title md-3">Maja</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/15.jpg" class="rounded-circle"
+                                alt="employee">
+                            <h3 class="card-title md-3">Leo</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/7.jpg" class="rounded-circle"
+                                alt="employee">
+                            <h3 class="card-title md-3">Christian</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/17.jpg" class="rounded-circle"
+                                alt="employee">
+                            <h3 class="card-title md-3">Jill</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact info  -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center md-4"> Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <i class="bi bi-geo-alt"></i> <span class="fw-bold"> Main Location</span> xxxxx
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-telephone"></i> <span class="fw-bold"> Phone number</span> xxxxx
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-chat-left-text"></i> <span class="fw-bold"> Mail</span> xxxxx@xxx
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div>
+                        <h3 class="text-center md-4">Map</h3>
+                        <div class="card-body text-center">
+                            <img src="img/Screenshot 2024-01-16 151411.png" id="map" alt="map">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container ">
+            <p class="lead">copyright <i class="fa fa-copyright"></i> 2024 </i></p>
 
-
+            <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
+        </div>
+    </footer>
+    <!-- Modal for the button "start the enrollment"-->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Start the enrolling</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Fyll i detta formulär så återkopplar vi </p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label"> Förnamn:</label>
+                            <input type="text" class="form-control" id="first-name"></input>
+                        </div>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label"> Efternamn:</label>
+                            <input type="text" class="form-control" id="first-name"></input>
+                        </div>
+                        <div class="mb-3">
+                            <label for="e-mail" class="col-form-label"> e-post:</label>
+                            <input type="text" class="form-control"placeholder="@" id="e-mail"></input>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

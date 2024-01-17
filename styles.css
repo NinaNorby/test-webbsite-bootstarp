@@ -1,11 +1,17 @@
-body::before{
-    display: block;
-    content:'';
-    height: 25px;
-} 
+body::before {
+  display: block;
+  content: "";
+  height: 25px;
+}
 
-@media(min-width:768px){
-    .news-input{
-        width: 50%;
-    }
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+
+#map {
+  width: 30%;
+  height: 30%;
+  border-radius: 3px;
 }
