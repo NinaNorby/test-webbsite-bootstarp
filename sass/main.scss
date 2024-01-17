@@ -1,0 +1,21 @@
+//Genom att jag gar skrivit det på detta sättet kommer sass primary " $blue" att ersättas med #3864c2. "$light: $gray-100 " kommer att ersättas med rgb(235, 235, 235);
+
+//Custom variables
+$primary:#3864c2;
+$light: rgb(235, 235, 235);
+
+//Lägger till theme colors utan att "förstöra" theme colors filen som finns i _variables.scss. Detta kommer att vara en "map-value" därav paranteserna
+
+//import the functions & variables
+@import"../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+$custom-theme-colors:(
+    "alt-light": rgb(205, 221, 255),
+    "alt-dark":rgb(80, 85, 97)
+);
+
+//sammanfoga dessa 
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
